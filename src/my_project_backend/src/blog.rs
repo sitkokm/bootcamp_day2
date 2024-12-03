@@ -1,4 +1,6 @@
-#[derive(Clone)]
+use candid::CandidType;
+
+#[derive(Clone, CandidType)]
 pub struct Blog {
     title: String,
     date: u32,
